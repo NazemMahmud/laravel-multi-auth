@@ -1,14 +1,14 @@
 # laravel-multi-auth
 Multiple Authentication: With Guards
 
-Prerequisites
+## Prerequisites
 1.	PHP (version >= 7.1.3).
 2.	Laravel (version >=5.4).
 3.	Composer is installed (version >= 1.3.2).
 4.	Laravel installer is installed
 
 
-Getting started
+## Getting started
 We will create a Laravel app that has three user classes — admin, customer, user. We will make guards for the three user classes and restrict different parts of our application based on those guards.
 
 Create the application
