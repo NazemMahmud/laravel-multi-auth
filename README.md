@@ -9,9 +9,9 @@ Multiple Authentication: With Guards
 
 
 ## Getting started
-We will create a Laravel app that has three user classes — admin, customer, user. We will make guards for the three user classes and restrict different parts of our application based on those guards.
+There will be three user classes — admin, customer, user. We will make guards for the three user classes and restrict different parts of our application based on those guards.
 
-Create the application
+**Create the application**
 `$ composer create-project –prefer-dist laravel/laravel multi-auth “5.5.*”`
 
 
@@ -43,12 +43,13 @@ DB_DATABASE=multiauth
 DB_USERNAME=root
 DB_PASSWORD=''
 ```
-Creating Model, Controller & Migrations
+## Creating Model, Controller & Migrations
 We will need two classes, the admins and customers, as well as Laravel comes with a users migration.
-Create Admin: ``` $php artisan make:model Admin -mcr ```
-Create Customer: ``` $php artisan make:model Customer -mcr ```
+**Create Admin:** `$php artisan make:model Admin -mcr `
+**Create Customer:** `$php artisan make:model Customer -mcr `
 This command will create the models, controllers and migration files all together.
-Migration
+
+## Migration
 Migration for Admins
 From the database/migrations directory, open the admins migrations file and edit it as follows: (as personal choice)
 //database/migrations/<timestamp>_create_admins_table.php
