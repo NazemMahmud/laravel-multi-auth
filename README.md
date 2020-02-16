@@ -45,15 +45,15 @@ DB_PASSWORD=''
 ```
 ## Creating Model, Controller & Migrations
 We will need two classes, the admins and customers, as well as Laravel comes with a users migration.
+
 **Create Admin:** `$php artisan make:model Admin -mcr `
+
 **Create Customer:** `$php artisan make:model Customer -mcr `
+
 This command will create the models, controllers and migration files all together.
 
 ## Migration
 Migration for Admins
-From the database/migrations directory, open the admins migrations file and edit it as follows: (as personal choice)
-//database/migrations/<timestamp>_create_admins_table.php
-We have created a simple migration and defined the columns we want the admin table to have. Eloquent provides methods that represent datatypes of our database table. We use them to define the datatypes of our table columns.
 
 ```    
     public function up()
@@ -71,8 +71,6 @@ We have created a simple migration and defined the columns we want the admin tab
 ...
 ```
 Migration for Customers
-From the database/migrations directory, open the customers migrations file and edit it as follows:
-//database/migrations/<timestamp>_create_customers_table.php
 
 ```
     public function up()
@@ -91,10 +89,11 @@ From the database/migrations directory, open the customers migrations file and e
 ```
 Migrate Database: $php artisan migrate 
 
-Models
+## Models
 Different classes of users will use different database tables for authentication. For this, we have to define different user model which extends the Authenticable class.
-Admin model
-In app/Admin.php edit as following:
+**Admin model**
+
+In `app/Admin.php` edit as following:
 ```
 <?php
 
