@@ -12,7 +12,7 @@ Getting started
 We will create a Laravel app that has three user classes — admin, customer, user. We will make guards for the three user classes and restrict different parts of our application based on those guards.
 
 Create the application
-$ composer create-project –prefer-dist laravel/laravel multi-auth “5.5.*”
+`$ composer create-project –prefer-dist laravel/laravel multi-auth “5.5.*”`
 
 
 In app/Providers/AppServiceProvider.php,
